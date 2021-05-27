@@ -312,7 +312,7 @@ contexts:
     - match: ^[.\']Fo(?=\s)
       scope: keyword.mandoc
     # Parsed
-    - match: ^[.\'](?:Ac|Ao|Bc|Bo|Brc|Bro|Dc|Do|Ec|Eo|Fc|Oc|Oo|Pc|Po|Qc|Qo|Sc|So|Xc|Xo)(?=\s)
+    - match: ^[.\'](?:Ac|Bc|Bo|Brc|Bro|Dc|Do|Ec|Eo|Fc|Oc|Oo|Pc|Po|Qc|Qo|Sc|So|Xc|Xo)(?=\s)
       scope: keyword.mandoc
 
   block_partial_implicit:
@@ -423,7 +423,7 @@ contexts:
           pop: true
     - match: ^[.\'](?:Es|Fr|Ot|Tn|Ux)(?=\s)
       scope: invalid.deprecated.mandoc
-    - match: ^[.\'](?:Ad|An|Ap|Ar|At|Bsx|Bx|Cd|Cm|Dv|Dx|Er|Ev|Fa|Fl|Fn|Ft|Fx|Ic|Ms|Nm|No|Nx|Ox|Pf|Va|Vt)(?=\s)
+    - match: ^[.\'](?:Ao|Ad|An|Ap|Ar|At|Bsx|Bx|Cd|Cm|Dv|Dx|Er|Ev|Fa|Fl|Fn|Ft|Fx|Ic|Ms|Nm|No|Nx|Ox|Pf|Va|Vt)(?=\s)
       scope: keyword.mandoc
       push:
         - include: callable_macro
