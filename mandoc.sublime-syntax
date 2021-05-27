@@ -156,7 +156,6 @@ contexts:
         - match: (?:-emphasis|Em)(?=\s)
           scope: entity.other.attribute-name.mandoc
           set:
-            - meta_content_scope: markup.italic.mandoc
             - include: font_mode_block
         - match: (?:-literal|Li)(?=\s)
           scope: entity.other.attribute-name.mandoc
@@ -369,7 +368,6 @@ contexts:
     - match: ^[.\']Em(?=\s)
       scope: keyword.mandoc
       push:
-        - meta_scope: markup.italic.mandoc
         - include: callable_macro
         - match: $\n?
           pop: true
@@ -413,7 +411,6 @@ contexts:
     - match: ^[.\']Sy\s
       scope: keyword.mandoc
       push:
-        - meta_scope: markup.bold.mandoc
         - include: callable_macro
         - match: $\n?
           pop: true
